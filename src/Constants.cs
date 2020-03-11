@@ -9,6 +9,7 @@ namespace HashtagChris.DotNetBlueZ
         public const string DeviceInterface = "org.bluez.Device1";
         public const string GattServiceInterface = "org.bluez.GattService1";
         public const string GattCharacteristicInterface = "org.bluez.GattCharacteristic1";
+        public const string BatteryInterface = "org.bluez.Battery1";
     }
 
     // https://www.bluetooth.com/specifications/gatt/
@@ -25,17 +26,16 @@ namespace HashtagChris.DotNetBlueZ
         public const string CurrentTimeCharacteristicUUID = "00002a2b-0000-1000-8000-00805f9b34fb";
 
         // Battery Service
-        // BlueZ presents this service a separate interface, Battery1.
-        // public const string BatteryServiceUUID = "0000180f-0000-1000-8000-00805f9b34fb";
-        // public const string BatteryLevelCharacteristicUUID = "00002a19-0000-1000-8000-00805f9b34fb";
+        // BlueZ presents this service as a separate interface, Battery1.
+        //public const string BatteryServiceUUID = "0000180f-0000-1000-8000-00805f9b34fb";
+        //public const string BatteryLevelCharacteristicUUID = "00002a19-0000-1000-8000-00805f9b34fb";
 
         // Apple Notification Center Service (ANCS)
         // https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Introduction/Introduction.html
         public const string ANCServiceUUID = "7905f431-b5ce-4e99-a40f-4b1e122d00d0";
 
-        // TODO: Lowercase these.
-        public const string ANCSNotificationSourceUUID = "9FBF120D-6301-42D9-8C58-25E699A21DBD";
-        public const string ANCSControlPointUUID = "69D1D8F3-45E1-49A8-9821-9BBDFDAAD9D9";
-        public const string ANCSDataSourceUUID = "22EAC6E9-24D6-4BB5-BE44-B36ACE7C7BFB";
+        public const string ANCSNotificationSourceUUID = "9fbf120d-6301-42d9-8c58-25e699a21dbd";
+        public const string ANCSControlPointUUID = "69d1d8f3-45e1-49a8-9821-9bbdfdaad9d9";
+        public const string ANCSDataSourceUUID = "22eac6e9-24d6-4bb5-be44-b36ace7c7bfb";
     }
 }

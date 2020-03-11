@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>HashtagChris.DotNetBlueZ</RootNamespace>
   </PropertyGroup>
 
@@ -19,8 +19,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Tmds.DBus" Version="0.7.0" />
-    <DotNetCliToolReference Include="Tmds.DBus.Tool" Version="0.7.0" />
+    <ProjectReference Include="..\..\Tmds.DBus\src\Tmds.DBus\Tmds.DBus.csproj" />
   </ItemGroup>
-
 </Project>
